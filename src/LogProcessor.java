@@ -73,6 +73,9 @@ public class LogProcessor {
         System.out.println("ERROR COUNT: " + processor.errorCount);
         System.out.println("MEMORY WARNING COUNT: " + processor.memoryWarningCount);
         System.out.println("INFO COUNT: " + processor.infoCount);
-        System.out.println("Last 100 Errors: " + processor.last100Errors);
+        System.out.println("Last 100 Errors: ");
+                for(String error: processor.last100Errors){
+                    System.out.println(error);
+                }
     }
 }
